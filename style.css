@@ -1,0 +1,148 @@
+html {
+	height: 100%;
+	min-height: 100%;
+
+}
+
+#navbar{
+	display:grid;
+	grid-template-columns: 50px 50px 1fr 50px 50px 50px 50px;
+	grid-template-rows: 50px;
+	grid-template-areas: 
+	"about store . gmail images menu sign-in" 
+}
+
+a, p{
+	text-decoration: none;
+	color: rgb(32, 32, 32);
+	font-family: Arial, helvetica, sans-serif;
+}
+
+
+#about{
+	grid-area:about;
+	align-self: center; 
+}
+
+#store{
+	grid-area:store;
+	align-self: center; 
+}
+
+#gmail{
+	grid-area:gmail;
+	justify-self: center;
+	align-self: center; 
+}
+
+#images{
+	grid-area:images;
+	justify-self: center;
+	align-self: center; 
+}
+
+#menu
+{
+	grid-area:menu;
+	justify-self: center;
+	align-self: center; 
+}
+
+#sign-in{
+	grid-area:sign-in;
+	justify-self: center;
+	align-self: center; 
+}
+
+#main{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 200px 70px 50px 200px;
+	grid-template-areas:
+	". logo ."
+	". search ."
+	". flexbox ."
+	". google_text .";
+}
+
+#logo{
+	grid-area: logo;
+	justify-self:center;
+	align-self: end;
+}
+
+#flexbox{
+	display: all;
+	grid-area: flexbox;
+	justify-self:center;
+	align-self: top;
+}
+
+#google-search-btn{
+}
+
+#random-search-btn{
+}
+
+#search{
+	grid-area: search;
+	align-self: center;
+	height: 20px;
+	width: 500px;
+}
+
+#google_text{
+	grid-area: google_text;
+	justify-self: center;
+}
+
+
+/*footer section*/
+#footer{
+	position: absolute;
+	bottom: 0;
+	display:inline-grid;
+	grid-template-columns:100px 100px 200px 1fr 70px 70px 70px;
+	grid-template-rows: 50px;
+	grid-template-areas: 
+	"Advertising Business HSW . Privacy Terms Settings"
+}
+
+#Advertising{
+	grid-area: Advertising;
+	justify-self:center;
+	align-self: center;
+}
+#Business{
+	grid-area: Business ;
+	justify-self:center;
+	align-self: center;
+}
+#HSW{
+	grid-area: HSW;
+	justify-self:center;
+	align-self: center;
+}
+#Privacy{
+	grid-area: Privacy;
+	justify-self:center;
+	align-self: center;
+}
+#Terms{
+	grid-area: Terms;
+	justify-self:center;
+	align-self: center;
+}
+#Settings{
+		grid-area: Settings;
+		justify-self:center;
+		align-self: center;
+}
+
+
+
+
+
+
+
+
